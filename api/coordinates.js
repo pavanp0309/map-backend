@@ -16,6 +16,10 @@ const coordinates = [
   },
 ];
 
+app.get('/', (req, res) => {
+  res.send('Backend API is running');
+});
+
 app.get('/api/coordinates', (req, res) => {
   res.json(coordinates);
 });
